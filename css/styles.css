@@ -1,0 +1,214 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+body {
+    background-color: white;
+}
+
+/* style index*/
+/* header*/
+
+header{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+header img {
+    height: 80px;
+    padding: 10px;  
+}
+
+header h1 {
+    color: brown;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    list-style: none;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+header nav ul li:hover {
+    list-style: none;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transform: scale(0.9);
+    box-shadow: 1px 1px 10px gray;
+}
+
+/*main*/
+
+main {
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
+    grid-template-areas: "titulo-p titulo-p"
+                         "parrafo parrafo";
+    justify-content: center;     
+    justify-items: center;
+    align-items: center;                
+        
+} 
+.titulo-p{
+    grid-area: titulo-p;
+    text-align: center;
+}                   
+
+.parrafo {
+    grid-area: parrafo;
+}
+
+
+main h2{
+    font-size: 28px;
+    text-align: center;
+    color:brown;
+    text-decoration:underline ; 
+}
+
+main h3{
+    text-align: center;
+    margin: 40px 300px 40px 300px;
+    line-height: 30px;    
+}
+
+.imagen { 
+    display: none;
+    justify-content: center;
+    align-items: center;   
+    margin: 2px 20px 30px 10px;
+    padding: 2px 20px 30px 80px;
+}
+     
+
+/*footer*/
+
+.subtitulo {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image:linear-gradient(to top, brown,rgb(241, 117, 117) ) ;
+    height: 80px;
+    padding-top: 50px;    
+}
+
+
+/*style contacto*/
+
+.mapa {
+    width: 100%;
+}
+
+.contacto {
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+/*style venta*/
+
+.estiloimg { 
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: 300px 300px ;
+   gap: 8px;
+   justify-items: center;
+   align-items: center;
+}
+
+.v1{
+    height: 200px;
+    padding: 30px;   
+}
+.v2{
+    height: 200px;
+    padding: 30px;   
+ 
+}
+.v3{
+    height: 200px;
+    padding: 30px;   
+
+}
+.v4{
+    height: 200px;
+    padding: 30px;   
+}
+.v5{
+    height: 200px;
+    padding: 30px;  
+}
+.v6{
+    height: 200px;
+    padding: 30px;
+   
+}
+/* Style Alquileres*/
+
+.estiloalq { 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px 300px ;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+}
+
+.a1 {
+    height: 200px;
+    padding: 30px;
+}
+
+.a2 {
+    height: 200px;
+    padding: 30px;
+}
+
+.a3 {
+    height: 200px;
+    padding: 30px;
+}
+
+.a4 {
+    height: 200px;
+    padding: 30px;
+}
+
+.a5 {
+    height: 200px;
+    padding: 30px;
+}
+
+.a6 {
+    height: 200px;
+    padding: 30px;
+}
+
+/*Style tasaciones*/
+
+.t1 {
+    width: 100%;
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
